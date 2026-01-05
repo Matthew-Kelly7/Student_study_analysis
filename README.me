@@ -1,0 +1,49 @@
+Student Study Analysis Dashboard
+
+
+Overview:
+
+A dashboard to analyze student study habits and performance. 
+Includes Python scripts for data processing, visualization, and insight generation.
+
+Features:
+
+Process and clean study data.
+Auto generate summary statistics and performance metrics.
+Visualize study patterns with graphs.
+Modular: notebooks for exploration, scripts for reproducible analysis.
+Streamlit dashboard with KPI's and graphs.
+
+
+Folder Structure:
+
+student_study_analytics/
+├─ app/           # Streamlit dashboard code 
+├─ data/          # Raw and processed CSV data
+├─ src/           # Python scripts
+├─ plots/         # Auto-generated plots (ignored in GitHub)
+├─ reports/       # Auto-generated results (ignored in GitHub)
+├─ .gitignore
+├─ README.md
+├─ Requirements.txt
+
+
+Setup:
+
+Prerequisites:
+Python 3.9+
+pip
+
+Install Dependencies:
+pip install -r requirements.txt
+
+Run Analysis:
+python src/main.py
+
+*Place CSVs in data/raw
+*Output files/graphs will be generated in output/ (not in GitHub).
+
+
+Run Streamlit Dashboard:
+From root directory Run
+streamlit run app/dashboard.py

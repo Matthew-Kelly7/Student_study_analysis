@@ -3,7 +3,7 @@ import pandas as pd
 import file_io
 import datetime
 
-def auto_report(df,df_pass,df_fail,report_folder="/Users/matthewkelly/spyder_code/Student_Project/reports"):
+def auto_report(df,df_pass,df_fail,report_folder="reports"):
    
     # Ensure report folder exists
     if os.path.exists(report_folder):

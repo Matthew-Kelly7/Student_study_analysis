@@ -3,6 +3,7 @@ from cleaning import clean_data
 from analysis import split_by_threshold, create_grades_column, add_results_column
 from plot_utils import generate_plots 
 from reporting import auto_report
+import os
 
 DATA_PATH = "data/raw"
 OUTPUT = "data/processed"
@@ -14,8 +15,8 @@ def main():
     df = load_data(DATA_PATH)
     df = clean_data(df)
     df_pass, df_fail = split_by_threshold(df, threshold)
-    df = create_grades_column(df, threshold)
-    df = add_results_column(df)
+    df = create_grades_column(df)
+    df = add_results_column(df, threshold)
 
     df.to_csv(f"{OUTPUT}/students_clean.csv", index=False)
     df_pass.to_csv(f"{OUTPUT}/passed_students.csv", index=False)

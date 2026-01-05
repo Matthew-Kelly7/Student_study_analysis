@@ -22,6 +22,7 @@ venv/
 # --------------------
 plots/
 reports/
+data/processed
 
 
 # --------------------
