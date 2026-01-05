@@ -1,7 +1,7 @@
 from file_io import load_data
 from cleaning import clean_data
 from analysis import split_by_threshold, create_grades_column, add_results_column
-from plots import generate_plots 
+from plot_utils import generate_plots 
 
 DATA_PATH = "data/raw"
 OUTPUT = "data/processed"
